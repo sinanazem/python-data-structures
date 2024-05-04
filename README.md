@@ -1,3 +1,3 @@
 # Python Data Structures & Algorithms
-<img src="https://miro.medium.com/v2/resize:fit:1358/1*YLgOp0RSbwR7VeLhcn6bZg.png">
+<img src="https://github.com/sinanazem/python-data-structures/blob/main/Algorithms%20and%20Data%20Structures.png">
 
