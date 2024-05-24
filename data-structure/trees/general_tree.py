@@ -1,4 +1,5 @@
 
+
 class NodeTree:
     def __init__(self, data):
         self.data = data
@@ -23,6 +24,15 @@ class NodeTree:
             lvl +=1
             p = p.parent
         return lvl
+    
+    def height(self):
+        if len(self.children) == 0:
+            return 0
+        else:
+            max_height = -1
+            for child in self.children:
+                max_height = max(max_height, child.height())
+            return max_height + 1
         
         
 if __name__ == "__main__":
@@ -56,25 +66,4 @@ if __name__ == "__main__":
     root.add_node(tv)
     
     root.print_tree()
-    
-    # print(root.get_level())
-    # print(root.children[0].get_level())
-    # print(root.children[0].children[0].get_level())
-    
-    
-    # print("\n")
-    # print(root.data)
-    # print("\t" + root.children[0].data)
-    # print("\t\t" + root.children[0].children[0].data)
-    # print("\t\t" + root.children[0].children[1].data)
-    # print("\t\t" + root.children[0].children[2].data)
-    
-    # print("\t" + root.children[1].data)
-    # print("\t\t" + root.children[1].children[0].data)
-    # print("\t\t" + root.children[1].children[1].data)
-    # print("\t\t" + root.children[1].children[2].data)
-    
-    # print("\t" + root.children[2].data)
-    # print("\t\t" + root.children[2].children[0].data)
-    # print("\t\t" + root.children[2].children[1].data)
-    # print("\t\t" + root.children[2].children[2].data)
+    print(root.height())
