@@ -4,6 +4,3 @@
 ### Resources:
 - https://github.com/keon/algorithms
 - https://github.com/donnemartin/interactive-coding-challenges
-- https://realpython.com/linked-lists-python/
-- https://realpython.com/sorting-algorithms-python/
-
