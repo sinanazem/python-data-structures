@@ -126,6 +126,3 @@ def cubic_time_example(matrix):
                 matrix[i][j] += matrix[i][k] * matrix[k][j]
 ```
 
-### Exponential Time: O(2^n)
-
-An algorithm has exponential time complexity if its running time doubles with
